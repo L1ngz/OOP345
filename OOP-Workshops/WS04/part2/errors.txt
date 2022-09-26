@@ -1,0 +1,29 @@
+Child.cpp: In constructor ‘sdds::Child::Child(std::string, int, const sdds::Toy**, size_t)’:
+Child.cpp:12:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   12 |         for (auto i = 0; i < count; i++)
+      |                          ~~^~~~~~~
+Child.cpp: In member function ‘sdds::Child& sdds::Child::operator=(const sdds::Child&)’:
+Child.cpp:26:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   26 |             for (auto i = 0; i < m_count; i++)
+      |                              ~~^~~~~~~~~
+Child.cpp:37:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   37 |             for (auto i = 0; i < m_count; i++)
+      |                              ~~^~~~~~~~~
+ConfirmOrder.cpp: In member function ‘sdds::ConfirmOrder& sdds::ConfirmOrder::operator=(const sdds::ConfirmOrder&)’:
+ConfirmOrder.cpp:17:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   17 |             for (auto i = 0; i < m_OrderCount; i++)
+      |                              ~~^~~~~~~~~~~~~~
+ConfirmOrder.cpp: In member function ‘sdds::ConfirmOrder& sdds::ConfirmOrder::operator+=(const sdds::Toy&)’:
+ConfirmOrder.cpp:51:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   51 |         for (auto i = 0; i < m_OrderCount; i++)
+      |                          ~~^~~~~~~~~~~~~~
+ConfirmOrder.cpp:59:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   59 |             for (auto i = 0; i < m_OrderCount; i++)
+      |                              ~~^~~~~~~~~~~~~~
+ConfirmOrder.cpp: In member function ‘sdds::ConfirmOrder& sdds::ConfirmOrder::operator-=(const sdds::Toy&)’:
+ConfirmOrder.cpp:76:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   76 |         for (auto i = 0; i < m_OrderCount; i++)
+      |                          ~~^~~~~~~~~~~~~~
+ConfirmOrder.cpp:92:26: warning: variable ‘m_toy’ set but not used [-Wunused-but-set-variable]
+   92 |              const Toy** m_toy =  new const Toy*[m_OrderCount -1];
+      |                          ^~~~~

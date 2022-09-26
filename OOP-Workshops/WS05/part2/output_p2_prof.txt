@@ -1,0 +1,139 @@
+Script started on Fri 11 Feb 2022 01:36:07 PM EST
+==115415== Memcheck, a memory error detector
+==115415== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==115415== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==115415== Command: ws processors.txt
+==115415== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+---------------------------------------------
+  1: ws
+  2: processors.txt
+---------------------------------------------
+
+---------------------------------------------
+                  CPU SETUP
+---------------------------------------------
+**EXPECTED EXCEPTION: File cannot be opened.
+**EXPECTED EXCEPTION: Central Unit cannot be copy-assigned.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200
+[0004] (1) IBM POWER-5
+[0005] (1) Intel C2-SOLO
+---------------------------------------------
+---------------------------------------------
+                ADD PROCESSOR
+---------------------------------------------
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200
+[0004] (1) IBM POWER-5
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+---------------------------------------------
+---------------------------------------------
+                  ADD JOBS
+---------------------------------------------
+Successfully added 4 jobs to the queue.
+**EXPECTED EXCEPTION: Job queue is full.
+---------------------------------------------
+---------------------------------------------
+                   RUN CPU
+---------------------------------------------
+Failed to complete job Add a file
+6 units available.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K processing `Subtract n numbers` [06/09 remaining]
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [06/07 remaining]
+[0004] (1) IBM POWER-5 processing `Add two numbers` [05/06 remaining]
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+**EXPECTED EXCEPTION: Job is not being handled by a unit.
+
+CPU run #2
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600 processing `Divide 2 integers` [06/08 remaining]
+[0002] (3) Intel Ci9-9900K processing `Subtract n numbers` [03/09 remaining]
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [05/07 remaining]
+[0004] (1) IBM POWER-5 processing `Add two numbers` [04/06 remaining]
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+
+**Confirmed (2) AMD RYZEN5-2600 processing `Divide 2 integers` [06/08 remaining] in CPU
+
+CPU run # 3
+[COMPLETE] `Subtract n numbers` [00/09 remaining] using (3) Intel Ci9-9900K
+3 units available.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600 processing `Divide 2 integers` [04/08 remaining]
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [04/07 remaining]
+[0004] (1) IBM POWER-5 processing `Add two numbers` [03/06 remaining]
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+CPU run # 4
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600 processing `Divide 2 integers` [02/08 remaining]
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [03/07 remaining]
+[0004] (1) IBM POWER-5 processing `Add two numbers` [02/06 remaining]
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+CPU run # 5
+[COMPLETE] `Divide 2 integers` [00/08 remaining] using (2) AMD RYZEN5-2600
+4 units available.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [02/07 remaining]
+[0004] (1) IBM POWER-5 processing `Add two numbers` [01/06 remaining]
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+CPU run # 6
+[COMPLETE] `Add two numbers` [00/06 remaining] using (1) IBM POWER-5
+5 units available.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200 processing `Join two strings` [01/07 remaining]
+[0004] (1) IBM POWER-5
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+CPU run # 7
+[COMPLETE] `Join two strings` [00/07 remaining] using (1) Intel PENT-PRO200
+6 units available.
+Central Processing Unit list
+[0001] (2) AMD RYZEN5-2600
+[0002] (3) Intel Ci9-9900K
+[0003] (1) Intel PENT-PRO200
+[0004] (1) IBM POWER-5
+[0005] (1) Intel C2-SOLO
+[0006] (2) AMD FX-Windsor-2
+
+---------------------------------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==115415== 
+==115415== HEAP SUMMARY:
+==115415==     in use at exit: 0 bytes in 0 blocks
+==115415==   total heap usage: 61 allocs, 61 frees, 84,996 bytes allocated
+==115415== 
+==115415== All heap blocks were freed -- no leaks are possible
+==115415== 
+==115415== For lists of detected and suppressed errors, rerun with: -s
+==115415== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 11 Feb 2022 01:36:07 PM EST

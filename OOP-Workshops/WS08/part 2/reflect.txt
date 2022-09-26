@@ -1,0 +1,40 @@
+---------------------------
+Workshop-8 Reflection
+---------------------------
+Student Name:Ling Zhang
+Student No.: 150903219
+*****************************
+
+
+1.  As we all learned that when every we use "new" keyword to allocated memery, we need to call "delete" keyword
+    to delete allocated memery. Smart poniter saved us process to delete. Smart pointers can automatically delete 
+    memery allocated.
+
+    std::unique_ptr<EmployeeWage> ew(new EmployeeWage(emp[i].name, sal[j].salary));
+    when this unique_ptr is ceated, it will live until the end of its current scope and get destroyed.
+
+
+2.  the difference between raw pinter and smart pointer is that smart pointer cannot be copied.
+    when passing it in a function, you need to pass it in using reference.
+
+    for instance:
+
+    // TODO: Overload the += operator with a smart pointer
+		//  as a second operand.
+		void operator+=(T &obj)
+		{
+			list.push_back(obj);
+		}
+
+		// TODO: Overload the += operator with a raw pointer
+		//  as a second operand.
+		void operator+=(T *obj)
+		{
+			list.push_back(*obj);
+		}
+
+
+
+
+
+    

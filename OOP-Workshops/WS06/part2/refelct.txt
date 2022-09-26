@@ -1,0 +1,16 @@
+---------------------------
+Workshop-6 Reflection
+---------------------------
+Student Name:Ling Zhang
+Student No.: 150903219
+*****************************
+
+1. How vector works is that it will call destructor of each element at the end of lifetime, but in this workshop, we use vector to store pointers.
+vector.clean() will not call delete on pointers. We need to manually delete each of them by ourselives. 
+
+2.loadData() will first check if the file can be open, then it calls createinstance() function to check if the data is valid. to achieve this 
+you need to preset some condition to see if it matches. In this case, we check if the first charactor is 'r', 'R', 'C' or 'c'. If it matches the condition
+then an instance will be created accordingly. Right now I have not firgure out a better way to do that.
+
+3. I could have used std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> but its not necessary. In c++ when we need to add a class into vector, we have
+to make a copy of that class and then add it, how ever adding a pointer would be much easier and much more efficient. 

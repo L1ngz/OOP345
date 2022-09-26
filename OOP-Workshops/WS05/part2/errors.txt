@@ -1,0 +1,28 @@
+In file included from w5_p2.cpp:9:
+Collection.h: In destructor ‘sdds::Collection<T>::~Collection()’:
+Collection.h:28:26: error: expected primary-expression before ‘]’ token
+   28 |             delete m_arr[];
+      |                          ^
+In file included from w5_p2.cpp:14:
+Movie.h: At global scope:
+Movie.h:17:11: error: redefinition of ‘class sdds::Movie’
+   17 |     class Movie
+      |           ^~~~~
+In file included from w5_p2.cpp:13:
+Movie.h:17:11: note: previous definition of ‘class sdds::Movie’
+   17 |     class Movie
+      |           ^~~~~
+In file included from w5_p2.cpp:15:
+SpellChecker.h:30:6: error: expected ‘;’ after class definition
+   30 |     }
+      |      ^
+      |      ;
+Book.cpp: In member function ‘const size_t& sdds::Book::year() const’:
+Book.cpp:41:16: warning: returning reference to temporary [-Wreturn-local-addr]
+   41 |         return m_year;
+      |                ^~~~~~
+In file included from SpellChecker.cpp:11:
+SpellChecker.h:30:6: error: expected ‘;’ after class definition
+   30 |     }
+      |      ^
+      |      ;

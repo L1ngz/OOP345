@@ -1,0 +1,23 @@
+
+
+This workshop is mainly focus on erro handling, function pointers, functors and template.
+
+1. functor is a function object like a class. In this workshop class SpellChecker is the functor
+To create a lambda expression is like create a function. it only contains the capture list, parameters,
+optional return type and the function body. lambda expression is like a function without identifier,
+you can assign it to a variable when you need to use it later. If the function is complex I would choose 
+to use functor, on the other hand, I would use lambda expression. because for a functor you can tell the 
+purpose by looking at its name, however for the lambda expression, you have to look at the function body 
+to understand what it is for.
+
+Like [&](Book &book), you wont know what it is for by looking at it.
+While SpellChecker is very clear, you know its used to check spelling errors.
+
+2.Instead of throw exceptions, we can just print the message if condition is not met
+
+3. if two classes are alomost indentical in logic, then inheritance would be a good choie in this situation
+I would extract shared  members out to make a parent class of Book and Moive, then make Book and Movie 
+child classes of the parent class. 
+
+4. I dont think we can remove the default constructor. we still need default constructor to set our classes 
+to the safe state. Otherwize.

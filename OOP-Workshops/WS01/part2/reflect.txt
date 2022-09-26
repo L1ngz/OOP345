@@ -1,0 +1,41 @@
+/*
+---------------------------------
+Student Name: Ling Zhang
+Student ID:150903219
+Date: May 22 2022
+----------------------------------
+I have done all the coding by myself and only copied the code that my professor provided 
+to complete my workshops and assignments.
+----------------------------------------------------------------------------------------
+*/
+
+In this workshop, during the coding, I learned that external link is used to create connection 
+
+cross files. The extern keyword is used when you want to delclar the connection of variables. 
+
+For internal linkage, you need to use the keyword "static" and for the variable that is declared
+
+as static, it can only be defined once when it was created. In this workshop, I used static variable
+
+in the void display() function to represent index of the list that need to be displayed. At the end
+
+of each display, index increased by one. In this case, if we used "int index = 0", then every time
+
+when we enter void display() function, index is going to be redefined as 0, then its not how we 
+
+want it to be. 
+
+
+For the part 2, I have changed the type of private member m_name and m_desc from char[], to char*
+
+and I add destructor to free the allocated memory. Each time when we need to store date, we need to
+
+allocate memory accoding to the size of the data. Then we store it in the class. And at the end of the 
+
+program, we need to have a destructor to free the memory that was allocated.
+
+
+
+
+
+

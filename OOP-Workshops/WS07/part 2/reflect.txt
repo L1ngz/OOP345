@@ -1,0 +1,38 @@
+---------------------------
+Workshop-7 Reflection
+---------------------------
+Student Name:Ling Zhang
+Student No.: 150903219
+*****************************
+
+
+1.  In this workshop I have used "sort", "replace_if", "any_of" and "copy_if"
+    from the SLT functions.
+    All those functions, you must define the ranged using "begin()", and "end()".
+    then you must define the condition of return.  
+
+2.  One thing that I notice is that it shorts the code we need to write. 
+    you dont need to define the range of the loop, and datails happend inside the loop.
+    All we need to do is write some parameters and lambda expression to specify the condition.
+
+
+3.  What we can do is that, we can use "else" to specify if those conditions didnt match 
+    , what we want the program to do. 
+
+    what I have for the sort function is :
+
+    void CovidCollection::sort(const std::string &params)
+    {
+        std::sort(m_Covid.begin(), m_Covid.end(), [&params](const Covid &c1, const Covid &c2)
+                  {
+				if (params == "country") return c1.m_country < c2.m_country;
+				else if (params == "variant") return c1.m_varient < c2.m_varient;
+				else if (params == "cases") return c1.m_numOfCases < c2.m_numOfCases;
+				else if (params == "deaths") return c1.m_numOfDeath < c2.m_numOfDeath; });
+    }
+
+
+    for instance, if the params input is invalid, we can set the program to sort based on 
+    city.
+
+    simply add "else {return c1.m_city > c2.m_city}"  below the last else if statement.
